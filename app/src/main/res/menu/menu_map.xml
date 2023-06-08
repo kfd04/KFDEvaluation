@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/clearMap"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="@string/clear_map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/removeMarker"
+        android:orderInCategory="100"
+        android:title="@string/revert_marker"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/takePhoto"
+        android:orderInCategory="100"
+        android:title="@string/take_photo"
+        android:visible="true"
+        app:showAsAction="never" />
+
+</menu>

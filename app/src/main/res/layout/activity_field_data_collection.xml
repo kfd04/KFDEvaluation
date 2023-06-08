@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    tools:context=".plantation.FieldDataCollection">
+
+
+    <Button
+        android:layout_marginTop="@dimen/plntFormBtnMarginVert"
+        android:id="@+id/fdc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/plntFormBtnMarginVert"
+        android:theme="@style/Def_MyButton"
+        android:padding="@dimen/submit_button_padding_topbottom"
+        android:text="Plantation"
+        android:textAlignment="center"
+        android:textSize="@dimen/submit_button_textsize" />
+
+    <Button
+        android:id="@+id/smc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/plntFormBtnMarginVert"
+        android:theme="@style/Def_MyButton"
+        android:padding="@dimen/submit_button_padding_topbottom"
+        android:text="SMC WORKS"
+        android:textAlignment="center"
+        android:textSize="@dimen/submit_button_textsize" />
+
+    <Button
+        android:theme="@style/Def_MyButton"
+        android:id="@+id/vfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/plntFormBtnMarginVert"
+        android:padding="@dimen/submit_button_padding_topbottom"
+        android:text="VFC"
+        android:textAlignment="center"
+        android:textSize="@dimen/submit_button_textsize" />
+
+    <Button
+        android:theme="@style/Def_MyButton"
+        android:id="@+id/protection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/plntFormBtnMarginVert"
+        android:padding="@dimen/submit_button_padding_topbottom"
+        android:text=" BOUNDARY PROTECTION"
+        android:textAlignment="center"
+        android:textSize="@dimen/submit_button_textsize" />
+</LinearLayout>

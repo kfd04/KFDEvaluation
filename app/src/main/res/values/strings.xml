@@ -1,0 +1,188 @@
+<resources>
+    <string name="google_maps_key">AIzaSyCNhzihzF3haRncJXfpZ1tJpxKldWTgybQ</string>
+    <string name="app_name">KFD Evaluation</string>
+    <string name="register_kfd_ee_survey_app">Registration</string>
+    <string name="survey_title">KFD Evaluation</string>
+    <string name="uri_path">android-app://com.kar.kfd.gov.kfdiesurvey2017/http/host/path</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="kfdl_logo_string">Karnataka Forest Department</string>
+
+    <string name="plant_sampling_string">Form 1 - Evaluation of plantation</string>//button name
+    changed from Form 2 to Form 1
+
+    <string name="sdp_sampling_string">Form 2 - Evaluation of seedling distribution to public</string>
+    //button name changed from Form
+    3 to Form 2
+    <string name="otherworks_sampling_string">Form 3 - Evaluation of Other Works (Other
+        than plantations &amp; seedling distribution to public )</string>
+    <string name="scptsp_sampling_string">Form 4 - Evaluation of SCP/TSP/Beneficiery Oriented Works</string>
+    <string name="advance_work">Form 5 - Advance Works</string>
+    <string name="nusery_work">Form 6 - Nursery Works</string>
+
+    <string name="version_string">version 1.0</string>
+    <string name="plant_samp">Plantation Sampling</string>
+    <string name="sdp_samp">SDP Sampling</string>
+    <string name="scp_n_tsp_samp">SCP &amp; TSP Sampling</string>
+    <string name="other_works_samp">Other Works Sampling</string>
+    <string name="advance_work_samp">Advance Works Sampling</string>
+    <string name="nursery_work_samp">Nursery Works Sampling</string>
+    <string name="upload_to_server">Upload Data To Server</string>
+    <string name="photo_deletion_text">Keep pressing down on a photo to delete it</string>
+    <string name="actionbar_title_other_works">Evaluation of Other Works </string>
+    <string name="actionbar_title_sdp_sampling">Evaluation of seedling distribution to public</string>
+
+    <string name="actionbar_title_plantation_sampling">Plantation Sampling</string>
+    <string name="actionbar_title_beneficiary">Beneficiary Form</string>
+    <string name="actionbar_title_scp_tsp_beneficiary">SCP and TSP Beneficiary</string>
+    <string name="actionbar_title_smc_work">SMC Work Form</string>
+    <string name="actionbar_title_smc_sampling">SMC Works</string>
+    <string name="actionbar_title_sample_plot">Sample Plot Form</string>
+    <string name="actionbar_title_plot_inventory">Inventory of Sample plot</string>
+    <string name="actionbar_title_plot_species">Inventory of Species</string>
+    <string name="actionbar_title_control_plot_inventory">Inventory of Control plot</string>
+    <string name="actionbar_title_regeneration_enumeration">Regeneration Enumeration</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading…</string>
+    <string name="actionbar_title_scptsp_sampling">SCP and TSP</string>
+    <string name="plant_sampling_basicinfo_string">I. Basic information</string>
+    <string name="plant_sampling_evaluation_string">II. Field Data Collection &amp;
+        Observation</string>
+    <string name="plant_sampling_smc_string">III. SMC Works</string>
+    <string name="plant_sampling_vfc_string">IV. Evaluation of VFC if any</string>
+    <string name="plant_sampling_annotation">5. ANNOTATION</string>
+    <string name="vfc_plantation_survey">VFC Plantation Survey</string>
+    <string name="scp_tsp_community">Community</string>
+    <string name="scp_tsp_individual">Individual</string>
+    <string name="plantation_basicinfo">Basic Information on Plantation(to be recorded by Evaluator)</string>
+    <string name="plantation_evaluation">Field Data Collection</string>
+    <string name="plantation_annotation">Plantation Sampling Annotation</string>
+    <string name="disName">District Name</string>
+    <string name="consName">LA Constituency Name</string>
+    <string name="talName">Taluk Name</string>
+    <string name="cirName">Circle Name</string>
+    <string name="divName">Division Name</string>
+    <string name="subDivName">Sub-division Name</string>
+    <string name="rangeName">Range Name</string>
+    <string name="hbName">Hobli Name</string>
+    <string name="gpName">Grama Panchayat Name</string>
+    <string name="vilName">Village Name</string>
+    <string name="locName">Locality Name</string>
+    <string name="rfName">RF Name</string>
+    <string name="hamName">Hamlet Name</string>
+    <string name="surName">Surveyor Name</string>
+    <string name="surAsstName">Surveyor Assistant Name</string>
+    <string name="staffName">Staff Name</string>
+    <string name="staffDesgName">Staff Designation</string>
+    <string name="expertName">Principal Investigator</string>
+    <string name="forestName">Forest Name</string>
+    <string name="sampleNo">Sample No.</string>
+    <string name="addMode">Add mode</string>
+    <string name="editMode">Edit mode</string>
+    <string name="uploadUserIdLabelText">User name</string>
+    <string name="uploadPwdLabelText">Password</string>
+    <string name="userMobNoText">Mobile number</string>
+    <string name="userNameText">Username</string>
+    <string name="testMode">TEST-MODE</string>
+    <string name="prodnMode">PROD-MODE</string>
+    <string name="edit_msg">Long press the row to edit</string>
+    <string name="title_activity_beneficiary_add_species">Species Details</string>
+    <string name="actionbar_title_bagged_seedling_at_nursery">Bagged seedling</string>
+    <string name="actionbar_title_about_seed_bed">About Seed Bed</string>
+    <string name="actionbar_title_nursery_works">Nursery Works Survey</string>
+    <string name="actionbar_title_transitory_works">Fire protection work</string>
+    <string name="actionbar_title_evaluation_of_procurement">Evaluation Of Procurement</string>
+    <string name="savelist">Save</string>
+    <string name="planting_activity">Planting Activity</string>
+    <string name="earthwork_activity">EarthWork </string>
+    <string name="smc_works">SMC WORKS</string>
+    <string name="boundary_protection">BOUNDARY PROTECTION</string>
+    <string name="vfc">VFC</string>
+    <string name="save">SAVE</string>
+    <string name="approve">APPROVE</string>
+    <string name="close">CLOSE</string>
+    <string name="view_sample_plot_map">View Sample Plot Map</string>
+    <string name="add_species">Add Species</string>
+    <string name="save_form">Save Form</string>
+    <string name="approve_message">Once approved, data can not be edited. Go ahead and approve?</string>
+    <string name="approve_form">Approve Form</string>
+    <string name="submit_form">Submit Form</string>
+    <string name="save_message">Once saved, data can be edited later. Go ahead and save?</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="smc_name">SMC Name</string>
+    <string name="smc_expenditure">SMC Expenditure</string>
+    <string name="exists">Exists</string>
+    <string name="non_nexists">Non  Exists</string>
+    <string name="polyline">Polyline</string>
+    <string name="polygon">Polygon</string>
+    <string name="start">Start</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="empty_pits_note">Note: Known Failures must be less than or equal to   Total Empty pits</string>
+    <string name="total_number_of_empty_pits">Total Number of Empty pits</string>
+    <string name="species">Species</string>
+    <string name="no_of_failures">No of Failures</string>
+    <string name="clear_map">Clear Map</string>
+    <string name="revert_marker">Revert Marker</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="home">Home</string>
+    <string name="edit_plantation_forms">Edit Plantation forms</string>
+    <string name="edit_sdp_forms">Edit SDP forms</string>
+    <string name="edit_other_work_forms">Edit Other Work forms</string>
+    <string name="edit_scp_tsp_forms">Edit SCP/TSP forms</string>
+    <string name="edit_advance_work_forms">Edit Advance Work forms</string>
+    <string name="edit_nursery_work_forms">Edit Nursery Work forms</string>
+    <string name="sync">Sync</string>
+    <string name="upload_survey_data">Upload Survey Data</string>
+    <string name="export_database">Export Database</string>
+    <string name="warning">Warning</string>
+    <string name="window">Create Dialog</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About us</string>
+    <string name="name">Name</string>
+    <string name="department">Department</string>
+    <string name="colon">:</string>
+    <string name="evaluation_department">Evaluation Department</string>
+    <string name="version">Version</string>
+    <string name="aranya_website">Aranya Website</string>
+    <string name="aranya_link">https://aranya.gov.in/new/homesh.aspx</string>
+    <string name="evaluation_website">Evaluation Website</string>
+    <string name="evaluation_link">http://evaluation.aranya.gov.in/KFDEvaluation</string>
+    <string name="kfd_desc">Designed and developed by : ICT-Karnataka Forest Department</string>
+    <string name="update_downloaded">Update Downloaded</string>
+    <string name="restart">Restart the Application</string>
+    <string name="playsore_url">https://play.google.com/store/apps/details?id=com.kar.kfd.gov.kfdsurvey</string>
+    <string name="notifi">Notifications</string>
+    <string name="notification_note">Note:These are Stored Notification,Received Notifications will be stored when you are using app.</string>
+
+    <string name="add_note">Add Note</string>
+    <string name="kfdl_logo_string_kn">ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ \n Karnataka Forest Department</string>
+    <string name="e_evaluation">ಇ-ಮೌಲ್ಯಮಾಪನ\ne-Evaluation</string>
+    <string name="gps_network_not_enabled">GPS not enabled , Please enable your gps before using this app</string>
+    <string name="open_location_settings">Go to setting</string>
+    <string name="Cancel"></string>
+    <string name="open_setting">Go to setting</string>
+
+    <string-array name="year_array">
+        <item>Select Year</item>
+        <item>2018-19</item>
+        <item>2019-20</item>
+        <item>2020-21</item>
+        <item>2021-22</item>
+        <item>2022-23</item>
+        <item>2023-24</item>
+        <item>2024-25</item>
+        <item>2025-26</item>
+        <item>2026-27</item>
+        <item>2027-28</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightBlack">#595959</color>
+    <color name="transparent">#00000000</color>
+    <color name ="colorGreen">@android:color/holo_green_dark</color>
+    <color name="colorGreenHighlight">#33691e</color>
+    <color name ="colorOrange">@android:color/holo_orange_light</color>
+    <color name ="colorOrangeDark">@android:color/holo_orange_dark</color>
+    <color name="grey_border_color">#E8E8E8</color>
+    <color name="yellow">#FFFF00</color>
+</resources>

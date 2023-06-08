@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scptsp.SCPTSPType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:text="@string/scp_tsp_community"
+            android:textAlignment="center"
+            android:textSize="@dimen/submit_button_textsize"
+            android:theme="@style/Def_MyButton" />
+
+        <Button
+            android:id="@+id/btnIndividual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:text="@string/scp_tsp_individual"
+            android:textAlignment="center"
+            android:textSize="@dimen/submit_button_textsize"
+            android:theme="@style/Def_MyButton" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:text="@string/save"
+            android:textAlignment="center"
+            android:textSize="@dimen/submit_button_textsize"
+            android:theme="@style/Def_MyButton" />
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:text="@string/approve"
+            android:textAlignment="center"
+            android:textSize="@dimen/submit_button_textsize"
+            android:theme="@style/Def_MyButton" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

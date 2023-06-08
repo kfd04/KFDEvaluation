@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="form_text_size">20sp</dimen>
+    <dimen name="form_text_size_header">22sp</dimen>
+    <dimen name="submit_button_textsize">30sp</dimen>
+    <dimen name="submit_button_padding_topbottom">10dp</dimen>
+    <dimen name="submit_button_padding_leftright">15dp</dimen>
+    <dimen name="form_sectionheader_height">70dp</dimen>
+
+    <dimen name="dialog_text_size">25sp</dimen>
+    <dimen name="dialog_header_textSize">27sp</dimen>
+    <dimen name="popupMargin">10dp</dimen>
+    <dimen name="popup_spacing_line_height">0.5dp</dimen>
+    <dimen name="popupHeaderSpacing">15dp</dimen>
+    <dimen name="popup_marginTop">20dp</dimen>
+</resources>

@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#ff8b32</item>
+        <!--<item name="colorControlNormal">#fa1509</item>-->
+        <item name="colorControlActivated">@color/colorGreen</item>
+        <item name="colorControlHighlight">@color/colorGreenHighlight</item>
+        <item name="colorButtonNormal">@color/colorGreen</item>
+    </style>
+    <style name="Def_MyButton" parent="AppTheme">
+        <item name="colorControlHighlight">@color/colorGreenHighlight</item>
+        <item name="colorButtonNormal">@color/colorGreen</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">15dp</item>
+<!--        android:textColor="@android:color/white"-->
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorGreen</item>
+    </style>
+
+    <style name="Divider_invisible">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyNavDrawerTheme">
+        <item name="android:textSize">@dimen/navigationItemTextSize</item>
+    </style>
+
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">@dimen/dialogBtnTextSize</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+
+    <style name="SettingsTextTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">@dimen/labelTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--android:background="@color/colorGreen"-->
+    <style name="SettingsSpinnerTheme">
+        <!--<item name="android:backgroundTint">@color/colorGreen</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">@dimen/labelTextSize</item>
+    </style>
+
+</resources>

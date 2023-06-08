@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/colorWhite"
+    android:paddingBottom="50dp">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/capture_photo_section"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:id="@+id/capture_photo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/delete_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/delete_photo_label_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_deletion_text"
+            android:textSize="@dimen/form_text_size" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/save_photo"
+            style="@style/Def_MyButton"
+           android:textSize="20sp"
+            android:text="@string/save"
+            android:layout_width="@dimen/submit_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/capture_photo"
+            android:layout_width="@dimen/submit_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Def_MyButton"
+            android:background="@color/colorGreen"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:paddingLeft="@dimen/submit_button_padding_leftright"
+            android:paddingStart="@dimen/submit_button_padding_leftright"
+            android:textColor="@android:color/white"
+            android:text="@string/take_photo"
+            android:textSize="@dimen/submit_button_textsize" />
+    </LinearLayout>
+</RelativeLayout>

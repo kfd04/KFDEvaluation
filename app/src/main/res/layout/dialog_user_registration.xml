@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/popup_marginTop">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/userRegHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="@dimen/popupMargin"
+            android:text="@string/register_kfd_ee_survey_app"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dialog_header_textSize" />
+
+        <View
+            android:id="@+id/lineSeperator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_spacing_line_height"
+            android:layout_below="@+id/userRegHeader"
+            android:layout_marginTop="@dimen/popupHeaderSpacing"
+            android:background="@color/grey_border_color" />
+
+        <TextView
+            android:id="@+id/evaluatorNameLabel"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/lineSeperator"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="Evaluator Name" />
+
+        <EditText
+            android:id="@+id/evaluatorNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/evaluatorNameLabel"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+
+        <TextView
+            android:id="@+id/assistantNameLabel"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/evaluatorNameET"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="Member 1 (Team lead)" />
+
+        <EditText
+            android:id="@+id/assistantNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assistantNameLabel"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+
+        <TextView
+            android:id="@+id/assistantNameLabel1"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/assistantNameET"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="Member 2" />
+
+        <EditText
+            android:id="@+id/assistantNameET1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assistantNameLabel1"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+
+        <TextView
+            android:id="@+id/assistantNameLabel2"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/assistantNameET1"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="Member 3" />
+
+        <EditText
+            android:id="@+id/assistantNameET2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assistantNameLabel2"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/assistantNameET2"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="Evaluation Location Details" />
+
+        <TextView
+            android:id="@+id/circleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:text="@string/cirName"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/cirSpin"
+            style="@style/SettingsSpinnerTheme"
+            android:layout_below="@id/circleName"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin" />
+
+        <TextView
+            android:id="@+id/divName"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@id/cirSpin"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="@string/divName" />
+
+
+        <Spinner
+            android:id="@+id/divSpin"
+            style="@style/SettingsSpinnerTheme"
+            android:layout_below="@id/divName"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin" />
+
+        <TextView
+            android:id="@+id/subDivName"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@id/divSpin"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="@string/subDivName" />
+
+        <Spinner
+            android:id="@+id/subDivSpin"
+            style="@style/SettingsSpinnerTheme"
+            android:layout_below="@id/subDivName"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin" />
+
+        <TextView
+            android:id="@+id/userNameLabel"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@+id/subDivSpin"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="@string/userNameText" />
+
+        <EditText
+            android:id="@+id/et_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userNameLabel"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+
+        <TextView
+            android:id="@+id/userMobNoLabel"
+            style="@style/SettingsTextTheme"
+            android:layout_below="@id/et_UserName"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="@string/userMobNoText" />
+
+        <EditText
+            android:id="@+id/userMobNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userMobNoLabel"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:paddingTop="5dp"
+            android:textColor="#616161"
+            android:textSize="@dimen/labelTextSize" />
+    </RelativeLayout>
+</ScrollView>

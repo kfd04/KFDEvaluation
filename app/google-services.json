@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445587670569",
+    "firebase_url": "https://kfd-ee.firebaseio.com",
+    "project_id": "kfd-ee",
+    "storage_bucket": "kfd-ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445587670569:android:39eb9d0158ce2944",
+        "android_client_info": {
+          "package_name": "com.kar.kfd.gov.kfdsurvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445587670569-l292d3j4s9s0f6ivornurg1mph69fj9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kar.kfd.gov.kfdsurvey",
+            "certificate_hash": "b1276325c4bf122a0e0fa9ba42860d647e68012c"
+          }
+        },
+        {
+          "client_id": "445587670569-o03bsebko4pa9jd6ie7jcdmevf2t91ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQYh0V7bbTSw9KDztt2cc5DUjF_OreeDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445587670569-o03bsebko4pa9jd6ie7jcdmevf2t91ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

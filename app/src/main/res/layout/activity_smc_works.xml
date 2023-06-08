@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/saveSMC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_color_background"
+            android:minHeight="70dp"
+            android:baselineAligned="false"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:text="@string/smc_name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View style="@style/Divider" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:text="@string/smc_expenditure"
+                    android:textStyle="bold" />
+
+                <View style="@style/Divider" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:paddingLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="20"
+                    android:paddingStart="5dp"
+                    android:text="@string/exists"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="1"
+                android:gravity="center"
+                >
+
+                <View style="@style/Divider" />
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="5dp"
+                    android:text="@string/non_nexists"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/view_smc_table" />
+
+        <!--<Button
+            android:layout_above="@+id/saveSMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add SMC"
+            android:id="@+id/list_button"
+            android:theme="@style/Def_MyButton"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/submit_button_padding_leftright"
+            android:padding="@dimen/submit_button_padding_topbottom"
+            android:textSize="@dimen/submit_button_textsize"
+            android:layout_centerHorizontal="true" />-->
+    </LinearLayout>
+
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/saveSMC"
+        style="@style/Def_MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/save"
+        tools:ignore="NotSibling" />
+
+
+</RelativeLayout>

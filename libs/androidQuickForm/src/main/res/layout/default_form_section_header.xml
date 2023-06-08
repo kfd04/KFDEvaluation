@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/form_sectionheader_height"
+    android:background="@color/colorGreen"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/sectionHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/form_text_size_header"
+        android:text="Information" />
+<!--   fontPath="fonts/Roboto-Bold.ttf" -->
+</LinearLayout>

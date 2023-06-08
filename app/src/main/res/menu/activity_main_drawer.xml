@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/mHome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/mEdit_plantation"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_plantation_forms" />
+        <item
+            android:id="@+id/mEdit_sdp"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_sdp_forms" />
+        <item
+            android:id="@+id/mEdit_otherworks"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_other_work_forms" />
+        <item
+            android:id="@+id/mEdit_scptsp"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_scp_tsp_forms" />
+        <item
+            android:id="@+id/mEdit_advancework"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_advance_work_forms" />
+        <item
+            android:id="@+id/mEdit_nurseryworks"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/edit_nursery_work_forms" />
+        <item
+            android:id="@+id/mSync"
+            android:icon="@drawable/ic_sync_black_36dp"
+            android:title="@string/sync" />
+
+        <item
+            android:id="@+id/mUpload"
+            android:icon="@drawable/ic_file_upload_black_36dp"
+            android:title="@string/upload_survey_data" />
+        <item
+            android:id="@+id/mExport"
+            android:icon="@drawable/ic_file_upload_black_36dp"
+            android:title="@string/export_database" />
+
+       <!-- <item
+            android:id="@+id/mWindow"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/window" />-->
+        <item
+            android:id="@+id/mImport"
+            android:icon="@drawable/ic_file_upload_black_36dp"
+            android:title="Import Database" />
+        <item
+            android:id="@+id/mLogout"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/logout" />
+
+
+    </group>
+
+    <!--  <item android:title="Communicate">
+          <menu>
+              <item
+                  android:id="@+id/nav_share"
+                  android:icon="@drawable/ic_menu_share"
+                  android:title="share" />
+              <item
+                  android:id="@+id/nav_send"
+                  android:icon="@drawable/ic_menu_send"
+                  android:title="send" />
+          </menu>
+      </item>-->
+
+</menu>

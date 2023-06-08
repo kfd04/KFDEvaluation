@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kar.kfd.gov.kfdsurvey">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="false"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/kfd_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:node="merge"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+
+        <activity
+            android:name=".plantation.PerambulationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PermissionActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".map.GPSService1"
+            android:exported="false" />
+
+        <activity
+            android:name=".Aboutus"
+            android:label="About Us"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".plantation.EmptyPitsActivity"
+            android:label="Information of Failed Seedlings" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SurveyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".otherworks.OtherSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Other Works"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".scptsp.ScpTspSamplingSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="ScpTsp Sampling"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sdp.SDPSamplingSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Evaluation of seedling distribution to public"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sdp.SDPBeneficiarySurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="SDP Sampling"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SeedlingsSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="SDP Sampling"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".scptsp.SCPTSPType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Select Nature of Benefit"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".SurveyList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Survey list"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FormList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Form list"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.PlantSampling"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Form 1 - Evaluation of plantation"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".advancework.PlantSamplingAdvaceWork"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".UploadedFormList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Uploaded Form List"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".plantation.VfcPlantationSampling"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Vfc plantation Evaluation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.VfcAdvacneWork"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.smc.SmcPlantationSampling"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="SMC Sampling Evaluation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.smc.SmcAdvanceWork"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.smc.SmcWorksActivity"
+            android:label="View SMC Works" />
+        <activity
+            android:name=".advancework.smc.AdvSmcList"
+            android:label="View SMC Works" />
+        <activity
+            android:name=".plantation.smc.AddOtherSMC"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Other SMC Work "
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.smc.AddOtherAdvSMC"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Other SMC Work "
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.PlotInventory"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Sample Plot Inventory"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.ControlPlotInventory"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Control Plot Inventory"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.ControlPlotType"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.PlantationSamplingEvaluation"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.PlantationSamplingAdvanceWork"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.FieldDataCollection"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Field Data Collection"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".nursery.BaggedSeedlingAvailableAtNurserySurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Bagged Seedling Available At Nursery Survey"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.Protection"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Evaluation of Protection"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.AdvProtection"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Evaluation of Protection"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".map.MapGps"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Map"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".map.MapGps_Beneficiary"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Map"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".map.MapGps_Individual"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Map"
+            android:screenOrientation="locked" />
+        <!--
+<activity
+            android:name=".PlantationSamplingAnnotation"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Plantation sampling annotation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity
+            android:name=".plantation.SamplePlotSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Sample Plot Survey"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.AdvSamplePlotSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Sample Plot Survey"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".scptsp.SCPTSPBeneficiary"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Scp Tsp Beneficiary details"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.smc.SmcHighest"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="SMC Work "
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".advancework.smc.AdvSmcHighest"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="SMC Work "
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewSamplePlotMap"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="View Sample Plot Map"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".plantation.AddSpecies"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Add Species"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BeneficiaryAddSpecies"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Species Details"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nursery.NurseryWorkSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Nursery Work Survey"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nursery.AboutSeedBedSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="About seedbed Survey"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ <service
+             android:name=".location.LocationService"
+             android:enabled="true" />
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--
+       <receiver
+                   android:name=".location.LocationBroadcastReceiver"
+                   android:process=":remote" />
+        -->
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".service.JIService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.FloatingWindow"
+            android:exported="false" />
+
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:label="Notifications"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".notification.ViewNotificationActivity"
+            android:label="Notification Detail"
+            android:screenOrientation="locked" />
+    </application>
+
+</manifest>

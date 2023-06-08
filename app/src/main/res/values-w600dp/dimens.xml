@@ -1,0 +1,61 @@
+<resources>
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="navigationItemTextSize">20sp</dimen>
+    <dimen name="navigationDrawerWidth">500dp</dimen>
+    <dimen name="navItemIconWidth">24dp</dimen>
+    <dimen name="data_fields_margin">20dp</dimen>
+    <dimen name="table_layout_margin_vert">10dp</dimen>
+    <dimen name="data_table_margin_vertical">55dp</dimen>
+    <dimen name="data_table_padding">20dp</dimen>
+    <dimen name="data_fields_text_size">22sp</dimen>
+    <dimen name="separator_line_margin">20dp</dimen>
+    <dimen name="seperator_line_height">2dp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="upload_btn_margin_vertical">50dp</dimen>
+    <dimen name="upload_header_margin_vert">35dp</dimen>
+    <dimen name="upload_btn_width">150dp</dimen>
+    <dimen name="upload_btn_height">65dp</dimen>
+    <dimen name="upload_btn_text_size">15sp</dimen>
+    <dimen name="fabMarginH">10dp</dimen>
+    <dimen name="fabMarginV">10dp</dimen>
+
+    <dimen name="kfdl_logotext_fontsize">25sp</dimen>
+    <dimen name="sampling_section_margin">50dp</dimen>
+    <dimen name="survey_title_fontsize">30sp</dimen>
+    <dimen name="delete_photo_label_margin">20dp</dimen>
+    <dimen name="button_font_size">30sp</dimen>
+    <dimen name="submit_button_textsize">30sp</dimen>
+    <dimen name="submit_button_padding_topbottom">10dp</dimen>
+    <dimen name="submit_button_padding_leftright">15dp</dimen>
+    <dimen name="form_text_size">20sp</dimen>
+    <dimen name="form_text_size_header">22sp</dimen>
+    <dimen name="kfd_logo_size">90dp</dimen>
+    <dimen name="version_margin_bottom">41dp</dimen>
+    <dimen name="nav_item_marginright">32dp</dimen>
+    <dimen name="nav_item_padding">16dp</dimen>
+    <dimen name="dialogTitleTextSize">19sp</dimen>
+    <dimen name="dialogBtnTextSize">14sp</dimen>
+    <dimen name="dialogContentTextSize">14sp</dimen>
+    <dimen name="homeBtnMarginVert">20dp</dimen>
+
+    //navigation drawer
+    <dimen name="pLeft">40dp</dimen>
+    <dimen name="iconWidthHeight">48dp</dimen>
+    <dimen name="iconMarginVert">35dp</dimen>
+    <dimen name="iconMarginHor">55dp</dimen>
+    <dimen name="itemTextSize">24sp</dimen>
+    <dimen name="labelTextSize">20sp</dimen>
+
+    <dimen name="dialog_text_size">25sp</dimen>
+    <dimen name="dialog_header_textSize">27sp</dimen>
+    <dimen name="popupMargin">15dp</dimen>
+    <dimen name="popup_spacing_line_height">0.5dp</dimen>
+    <dimen name="popupHeaderSpacing">15dp</dimen>
+    <dimen name="popup_marginTop">20dp</dimen>
+    <dimen name="versionPaddingVert">20dp</dimen>
+    <dimen name="btnLayoutMarginVert">50dp</dimen>
+    <dimen name="surveyTypeMarginVert">20dp</dimen>
+    <dimen name="plntFormBtnMarginVert">20dp</dimen>
+    <dimen name="kfd_logo_margin_vert">20dp</dimen>
+</resources>

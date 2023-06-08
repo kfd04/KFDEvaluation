@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_location_settings">Please enable your gps before using this app</string>
+    <string name="Cancel">Cancel</string>
+    <string name="open_setting">Go to setting</string>
+</resources>

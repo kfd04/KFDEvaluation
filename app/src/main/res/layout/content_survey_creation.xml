@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SurveyActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/kfdlLogo"
+            android:layout_width="@dimen/kfd_logo_size"
+            android:layout_height="@dimen/kfd_logo_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/kfd_logo_margin_vert"
+            android:contentDescription="@string/kfdl_logo_string"
+            android:src="@drawable/kfdlogo" />
+
+        <TextView
+            android:id="@+id/kfdlLogoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kfdlLogo"
+            android:text="@string/kfdl_logo_string"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/kfdl_logotext_fontsize" />
+
+        <TextView
+            android:id="@+id/surveyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kfdlLogoText"
+            android:layout_marginTop="@dimen/sampling_section_margin"
+            android:text="@string/survey_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/survey_title_fontsize" />
+
+        <TextView
+            android:id="@+id/surveyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/surveyTitle"
+            android:layout_marginTop="@dimen/surveyTypeMarginVert"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/survey_title_fontsize" />
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surveyType"
+            android:layout_marginTop="@dimen/btnLayoutMarginVert"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/plantSamplingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/plant_sampling_string"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+
+            <Button
+                android:id="@+id/sdpSamplingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/sdp_sampling_string"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+
+
+            <!--  <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                  android:padding="@dimen/submit_button_padding_topbottom"
+                  android:text="Form 4 - Logging"
+                  android:textColor="@android:color/white"
+                  android:textSize="16sp"
+                  android:theme="@style/Def_MyButton"
+                  android:visibility="gone" />-->
+
+
+            <Button
+                android:id="@+id/fireWorksButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="Form 5 - Verification of fire protection work"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/otherworksSampling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/otherworks_sampling_string"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+
+            <Button
+                android:id="@+id/scptspSampling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/scptsp_sampling_string"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+
+            <Button
+                android:id="@+id/advanceWorkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/advance_work"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+
+            <Button
+                android:id="@+id/nurseryWorkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/homeBtnMarginVert"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/nusery_work"
+                android:textSize="16sp"
+                android:theme="@style/Def_MyButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

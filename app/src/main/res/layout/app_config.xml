@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/section1"
+            layout="@layout/default_form_section_header" />
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            style="@style/FormRowStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/section1"
+            android:paddingBottom="16dp">
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/ssample"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/sampleNo"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/ssample"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/sampleNo"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/sampleNoET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sampleNo"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                android:visibility="gone"
+                tools:targetApi="o" />
+
+
+            <include
+                android:id="@+id/lserial"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/sampleNoET"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/circleName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/lserial"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/cirName" />
+
+            <Spinner
+                android:id="@+id/cirSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/circleName"
+                android:clickable="false"/>
+
+            <include
+                android:id="@+id/lCircle"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/cirSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sCircle"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lCircle" />
+
+            <TextView
+                android:id="@+id/divName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sCircle"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/divName" />
+
+
+            <Spinner
+                android:id="@+id/divSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/divName" />
+
+            <include
+                android:id="@+id/lDivision"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/divSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sDIvision"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lDivision" />
+
+            <TextView
+                android:id="@+id/subDivName"
+                style="@style/SettingsTextTheme"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sDIvision"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/subDivName" />
+
+
+            <Spinner
+                android:id="@+id/subDivSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/subDivName" />
+
+            <include
+                android:id="@+id/lSubDivision"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/subDivSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sSubDivision"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lSubDivision" />
+
+            <TextView
+                android:id="@+id/rangeName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sSubDivision"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/rangeName" />
+
+
+            <Spinner
+                android:id="@+id/rangeSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/rangeName" />
+
+            <include
+                android:id="@+id/lRange"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rangeSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sRange"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lRange" />
+
+            <TextView
+                android:id="@+id/districtName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sRange"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/disName" />
+
+            <Spinner
+                android:id="@+id/disSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/districtName" />
+
+            <include
+                android:id="@+id/lDistrict"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/disSpin"
+                android:layout_marginTop="5dp" />
+            <!--Constitutency -->
+            <androidx.legacy.widget.Space
+                android:id="@+id/cs"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lDistrict" />
+
+            <TextView
+                android:id="@+id/consName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/cs"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/consName" />
+            <!--<EditText
+                android:id="@+id/consNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/consName"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                />-->
+
+            <Spinner
+                android:id="@+id/consSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/consName" />
+
+            <include
+                android:id="@+id/cl"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/consSpin"
+                android:layout_marginTop="5dp" />
+
+            <!--   <android.support.v4.widget.Space
+                   android:id="@+id/cs"
+                   android:layout_width="match_parent"
+                   android:layout_height="10dp"
+                   android:layout_below="@id/l1" />
+               <TextView
+                   android:id="@+id/consName"
+                   style="@style/SettingsTextTheme"
+                   android:layout_below="@id/s1"
+                   android:text="@string/consName" />
+
+               <EditText
+                   android:id="@+id/consNameET"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/consName"
+                   android:paddingBottom="5dp"
+                   android:paddingTop="5dp"
+                   android:textColor="#616161"
+                   android:textSize="@dimen/labelTextSize"
+                    />-->
+            <!--Constitutency -->
+            <androidx.legacy.widget.Space
+                android:id="@+id/sCons"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/cl" />
+
+            <TextView
+                android:id="@+id/talukName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sCons"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/talName" />
+
+            <Spinner
+                android:id="@+id/talSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/talukName" />
+
+            <include
+                android:id="@+id/lTaluk"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/talSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sTaluk"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lTaluk" />
+
+            <!--  <TextView
+
+                  android:id="@+id/hobliName"
+                  style="@style/SettingsTextTheme"
+                  android:layout_below="@id/sTaluk"
+                  android:text="@string/hbName" />
+
+              <Spinner
+                  android:id="@+id/hobliSpin"
+                  style="@style/SettingsSpinnerTheme"
+                  android:layout_below="@id/hobliName" />
+
+              <include
+                  android:id="@+id/lHobli"
+                  layout="@layout/seperator_line_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:layout_below="@id/hobliSpin"
+                  android:layout_marginTop="5dp" />
+
+              <androidx.legacy.widget.Space
+                  android:id="@+id/sHobli"
+                  android:layout_width="match_parent"
+                  android:layout_height="10dp"
+                  android:layout_below="@id/lHobli" />-->
+
+            <TextView
+                android:id="@+id/gpName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sTaluk"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/gpName" />
+
+            <Spinner
+                android:id="@+id/gpSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@+id/gpName" />
+            <!-- <EditText
+                 android:id="@+id/gPNameET"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/gpName"
+                 android:maxLines="1"
+                 android:paddingBottom="5dp"
+                 android:paddingTop="5dp"
+                 android:singleLine="true"
+                 android:textColor="#616161"
+                 android:textSize="@dimen/labelTextSize" />-->
+
+            <include
+                android:id="@+id/lGP"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/gpSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sGP"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lGP" />
+
+            <TextView
+                android:id="@+id/villName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sGP"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/vilName" />
+
+            <!--    <EditText
+                    android:id="@+id/villNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/villName"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#616161"
+                    android:textSize="@dimen/labelTextSize" />-->
+            <Spinner
+                android:id="@+id/villSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/villName" />
+
+            <include
+                android:id="@+id/lVillage"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/villSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sVillage"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lVillage" />
+
+            <TextView
+                android:id="@+id/localityName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sVillage"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/locName"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/localityNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/localityName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                android:visibility="gone"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/lLocality"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/localityNameET"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sLocality"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lLocality" />
+
+            <TextView
+                android:id="@+id/hamletName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/sLocality"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/hamName" />
+
+            <EditText
+                android:id="@+id/hamletNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hamletName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/lHamlet"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/hamletNameET"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s17"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lHamlet"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/forestName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s17"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/forestName"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/forestNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forestName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                android:visibility="gone"
+                tools:targetApi="o" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/sForestName"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/forestNameET"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forestNameET"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@color/colorGreen"
+                android:minHeight="32dp"
+                android:padding="@dimen/submit_button_padding_topbottom"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/submit_button_textsize" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/section2"
+            layout="@layout/default_form_section_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/layout1" />
+
+        <RelativeLayout
+            android:id="@+id/surveyor_details"
+            style="@style/FormRowStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/section2"
+            android:paddingBottom="16dp"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/l11"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s11"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/l11" />
+
+            <TextView
+                android:id="@+id/surveyorName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s11"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/surName" />
+
+            <EditText
+                android:id="@+id/surveyorNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/surveyorName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/l12"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/surveyorNameET"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s12"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/l12" />
+
+            <TextView
+                android:id="@+id/surveyorAsstName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s12"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/surAsstName" />
+
+            <EditText
+                android:id="@+id/surveyorAsstNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/surveyorAsstName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/l13"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/surveyorAsstNameET"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s13"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/l13" />
+
+            <TextView
+                android:id="@+id/kfdStaffName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s13"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/staffName" />
+
+            <EditText
+                android:id="@+id/kfdStaffNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kfdStaffName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/l14"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/kfdStaffNameET"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s14"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/l14" />
+
+            <TextView
+                android:id="@+id/kfdStaffDesg"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s14"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/staffDesgName" />
+
+
+            <EditText
+                android:id="@+id/kfdStaffDesgET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kfdStaffDesg"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#616161"
+                android:textSize="@dimen/labelTextSize"
+                tools:targetApi="o" />
+
+            <include
+                android:id="@+id/l15"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/kfdStaffDesgET"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s15"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/l15" />
+
+            <TextView
+                android:id="@+id/expertName"
+                style="@style/SettingsTextTheme"
+                android:layout_below="@id/s15"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="@string/expertName" />
+
+
+            <Spinner
+                android:id="@+id/expertNameSpin"
+                style="@style/SettingsSpinnerTheme"
+                android:layout_below="@id/expertName" />
+
+            <include
+                android:id="@+id/l16"
+                layout="@layout/seperator_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/expertNameSpin"
+                android:layout_marginTop="5dp" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/s16"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/l16" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

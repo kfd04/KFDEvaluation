@@ -1,0 +1,54 @@
+<resources>
+    <dimen name="activity_horizontal_margin">25dp</dimen>
+    <dimen name="activity_vertical_margin">25dp</dimen>
+    <dimen name="data_fields_margin">25dp</dimen>
+    <dimen name="table_layout_margin_vert">15dp</dimen>
+    <dimen name="data_table_margin_vertical">55dp</dimen>
+    <dimen name="data_table_padding">20dp</dimen>
+    <dimen name="data_fields_text_size">22sp</dimen>
+    <dimen name="separator_line_margin">25dp</dimen>
+    <dimen name="seperator_line_height">2dp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="upload_btn_margin_vertical">55dp</dimen>
+    <dimen name="upload_header_margin_vert">45dp</dimen>
+    <dimen name="upload_btn_width">175dp</dimen>
+    <dimen name="upload_btn_height">75dp</dimen>
+    <dimen name="upload_btn_text_size">16sp</dimen>
+    <dimen name="fabMarginH">10dp</dimen>
+    <dimen name="fabMarginV">0dp</dimen>
+    <dimen name="kfdl_logotext_fontsize">25sp</dimen>
+    <dimen name="sampling_section_margin">50dp</dimen>
+    <dimen name="survey_title_fontsize">30sp</dimen>
+    <dimen name="delete_photo_label_margin">20dp</dimen>
+    <dimen name="button_font_size">30sp</dimen>
+    <dimen name="submit_button_textsize">30sp</dimen>
+    <dimen name="submit_button_padding_topbottom">10dp</dimen>
+    <dimen name="submit_button_padding_leftright">15dp</dimen>
+    <dimen name="form_text_size">20sp</dimen>
+    <dimen name="form_text_size_header">22sp</dimen>
+    <dimen name="kfd_logo_size">100dp</dimen>
+    <dimen name="version_margin_bottom">41dp</dimen>
+    <dimen name="nav_item_marginright">32dp</dimen>
+    <dimen name="nav_item_padding">16dp</dimen>
+    <dimen name="dialogTitleTextSize">22sp</dimen>
+    <dimen name="dialogBtnTextSize">16sp</dimen>
+    <dimen name="dialogContentTextSize">16sp</dimen>
+    <dimen name="homeBtnMarginVert">25dp</dimen>
+
+    //navigation
+    <dimen name="navigationItemTextSize">21sp</dimen>
+    <dimen name="navigationDrawerWidth">500dp</dimen>
+    <dimen name="navItemIconWidth">32dp</dimen>
+    <dimen name="pLeft">42dp</dimen>
+    <dimen name="iconWidthHeight">50dp</dimen>
+    <dimen name="iconMarginVert">52dp</dimen>
+    <dimen name="iconMarginHor">57dp</dimen>
+    <dimen name="itemTextSize">25sp</dimen>
+
+    <dimen name="labelTextSize">20sp</dimen>
+    <dimen name="versionPaddingVert">20dp</dimen>
+    <dimen name="btnLayoutMarginVert">70dp</dimen>
+    <dimen name="surveyTypeMarginVert">30dp</dimen>
+    <dimen name="plntFormBtnMarginVert">20dp</dimen>
+    <dimen name="kfd_logo_margin_vert">20dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        tools:text="Testing"
+        android:id="@+id/labelTextView"
+        android:textSize="@dimen/form_text_size"
+        style="@style/FormLabelStyle" />
+
+    <TextView
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        tools:text="Testing"
+        android:id="@+id/valueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="@dimen/form_text_size"
+        android:gravity="top|left"
+    />
+
+</LinearLayout>

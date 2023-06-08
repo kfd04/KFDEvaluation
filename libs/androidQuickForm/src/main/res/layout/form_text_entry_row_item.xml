@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FormRowStyle"
+    android:orientation="vertical">
+
+    <!-- android:fontPath="fonts/SourceSansPro-Semibold.ttf"-->
+    <TextView
+        tools:text="Heading"
+        android:id="@+id/labelTextView"
+        style="@style/FormLabelStyle"
+        android:textSize="@dimen/form_text_size" />
+
+    <EditText
+        android:padding="5dp"
+        android:background="@color/colorGreen"
+        android:id="@+id/valueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textSize="@dimen/form_text_size"
+        android:maxLines="2"
+        android:textCursorDrawable="@drawable/yellow_cursor"
+        android:textColor="@color/yellow"
+        android:singleLine="true" />
+
+    <include layout="@layout/seperator_line_view"/>
+</LinearLayout>

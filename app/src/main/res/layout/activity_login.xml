@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/kfdlLogo"
+                    android:layout_width="@dimen/kfd_logo_size"
+                    android:layout_height="@dimen/kfd_logo_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/kfd_logo_margin_vert"
+                    android:contentDescription="@string/kfdl_logo_string"
+                    android:src="@drawable/kfdlogo" />
+
+                <TextView
+                    android:id="@+id/kfdlLogoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kfdlLogo"
+                    android:text="@string/kfdl_logo_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/kfdl_logotext_fontsize" />
+
+                <TextView
+                    android:id="@+id/surveyTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kfdlLogoText"
+                    android:layout_marginTop="@dimen/sampling_section_margin"
+                    android:text="@string/survey_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/survey_title_fontsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/login_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_UserName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_user"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="20dp"
+                        android:hint="@string/username"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Password"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawableLeft="@drawable/ic_lock"
+                        android:drawablePadding="20dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSpinner"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="20dp">
+
+                    <ImageView
+                        android:id="@+id/ivYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_calendar" />
+
+                    <Spinner
+                        android:id="@+id/spYear"
+                        android:layout_width="229dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="57dp"
+                        android:layout_marginLeft="57dp"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlSpinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:text="@string/login"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#47292929"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/list_fragment" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/submitFormHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingTop="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:text="@string/approve_form"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dialog_header_textSize" />
+
+        <View
+            android:id="@+id/lineSeperator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_spacing_line_height"
+            android:layout_below="@+id/submitFormHeader"
+            android:layout_marginTop="@dimen/popupHeaderSpacing"
+            android:background="@color/grey_border_color" />
+
+        <TextView
+            android:id="@+id/orderConfirmationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineSeperator"
+            android:layout_marginLeft="@dimen/popupMargin"
+            android:layout_marginTop="@dimen/popupMargin"
+            android:layout_marginRight="@dimen/popupMargin"
+            android:text="@string/approve_message"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dialog_text_size" />
+
+        <Button
+            android:id="@+id/alert_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderConfirmationText"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/form_text_size_header"
+            android:text="@string/submit"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderConfirmationText"
+            android:layout_toLeftOf="@+id/alert_submit"
+            android:background="@color/colorWhite"
+            android:layout_toStartOf="@+id/alert_submit"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/form_text_size_header"
+            android:text="@string/cancel"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom ="@dimen/popup_marginTop">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/submitFormHeader"
+            android:paddingTop="@dimen/popupMargin"
+            android:paddingLeft="@dimen/popupMargin"
+            android:paddingRight="@dimen/popupMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dialog_header_textSize"
+            android:text="Approve Form"/>
+        <View
+            android:id="@+id/lineSeperator"
+            android:layout_below="@+id/submitFormHeader"
+            android:layout_marginTop="@dimen/popupHeaderSpacing"
+            android:layout_width="match_parent"
+            android:background="@color/grey_border_color"
+            android:layout_height="@dimen/popup_spacing_line_height"/>
+
+        <TextView
+            android:id="@+id/orderConfirmationText"
+            android:layout_marginTop="@dimen/popupMargin"
+            android:layout_below="@+id/lineSeperator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/popupMargin"
+            android:layout_marginRight="@dimen/popupMargin"
+            android:textColor="@android:color/black"
+            android:text="Once approved, data can not be edited. Go ahead and approve?"
+            android:textSize="@dimen/dialog_text_size"/>
+    </RelativeLayout>
+</RelativeLayout>-->

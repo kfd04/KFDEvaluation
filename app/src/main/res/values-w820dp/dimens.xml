@@ -1,0 +1,32 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="kfdl_logotext_fontsize">25sp</dimen>
+    <dimen name="sampling_section_margin">50dp</dimen>
+    <dimen name="survey_title_fontsize">30sp</dimen>
+    <dimen name="delete_photo_label_margin">20dp</dimen>
+    <dimen name="button_font_size">30sp</dimen>
+    <dimen name="submit_button_textsize">30sp</dimen>
+    <dimen name="submit_button_padding_topbottom">10dp</dimen>
+    <dimen name="submit_button_padding_leftright">15dp</dimen>
+    <dimen name="form_text_size">20sp</dimen>
+    <dimen name="form_text_size_header">22sp</dimen>
+    <dimen name="kfd_logo_size">90dp</dimen>
+    <dimen name="version_margin_bottom">41dp</dimen>
+    <dimen name="nav_item_marginright">32dp</dimen>
+    //app config
+    <dimen name="labelTextSize">19sp</dimen>
+
+    <dimen name="imageWidth">80dp</dimen>
+    <dimen name="imageHeight">80dp</dimen>
+
+    <dimen name="dialog_text_size">25sp</dimen>
+    <dimen name="dialog_header_textSize">27sp</dimen>
+    <dimen name="popupMargin">10dp</dimen>
+    <dimen name="popup_spacing_line_height">0.5dp</dimen>
+    <dimen name="popupHeaderSpacing">15dp</dimen>
+    <dimen name="popup_marginTop">20dp</dimen>
+</resources>

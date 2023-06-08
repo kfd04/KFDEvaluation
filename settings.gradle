@@ -1,0 +1,2 @@
+include ':app',':androidQuickForm'
+project(':androidQuickForm').projectDir = new File('libs/androidQuickForm')

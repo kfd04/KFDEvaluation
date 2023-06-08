@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plantation.EmptyPitsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".plantation.EmptyPitsActivity">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="@string/empty_pits_note"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/total_number_of_empty_pits"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvNoOfEmptyPits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.11"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreen"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:gravity="left|center"
+                    android:text="@string/species"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_font_size" />
+
+                <TextView
+                    android:layout_weight=".01"
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="@string/no_of_failures"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_font_size" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_weight="1"
+                    android:background="#FF909090"
+                    android:padding="2dip" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvKnownSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/list_unknown_species" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnSaveSpecies"
+            style="@style/Def_MyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/save"
+            android:textSize="20sp"
+            tools:ignore="NotSibling" />
+</RelativeLayout>
+</ScrollView>

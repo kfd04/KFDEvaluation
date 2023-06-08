@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/FormRowStyle"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        style="@style/FormLabelStyle"
+        android:fontFamily="@fonts/SourceSansPro-Reguar.ttf"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/form_text_size"
+        tools:text="Select" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--fontPath="fonts/SourceSansPro-Semibold.ttf"-->
+        <Button
+            android:id="@+id/btn_picker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/amaranth_bold"
+            android:gravity="center_vertical|left"
+            android:paddingRight="20dp"
+            android:textSize="@dimen/form_text_size"
+            tools:text="submit" />
+        <!-- android:theme="@style/Submit_Button"-->
+    </RelativeLayout>
+    <include layout="@layout/seperator_line_view"/>
+
+</LinearLayout>

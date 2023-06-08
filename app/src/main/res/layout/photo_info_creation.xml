@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:text="This is for Preparing important data required to match Photos with corresponding forms on the Webserver. when you run this, required data will be created internally and when you copy Photos , this data will also be copied."/>
+
+    <Button
+        android:theme="@style/Def_MyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RUN"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        android:id="@+id/create_work_code_info_file" />
+    </LinearLayout>
+</RelativeLayout>
